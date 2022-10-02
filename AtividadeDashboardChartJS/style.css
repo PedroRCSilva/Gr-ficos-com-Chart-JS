@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ANIMAÇÃO */
+
+@keyframes animation {
+  0% {
+    background-size: 100%;
+  }
+
+  100% {
+    background-size: 200%;
+  }
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  column-gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: 5s animation infinite alternate;
+  background-image: linear-gradient(90deg, rgba(80, 1, 159, 1) 17%, rgba(9, 9, 121, 0.938813025210084) 45%, rgba(0, 212, 255, 1) 100%);
+}
+
+.container h2 {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: Arial;
+
+}
+
+#myGraphic,
+#myGraphic2 {
+  padding: 30px;
+  width: 600px !important;
+  height: 500px !important;
+  background-color: azure;
+  ;
+}
